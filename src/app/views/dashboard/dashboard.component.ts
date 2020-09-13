@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.commonService.loginDetails.subscribe(val => {
       console.log("details", val);
-      this.loginData = val;
+      this.loginData = val[0];
     })
   }
 

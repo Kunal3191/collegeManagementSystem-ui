@@ -11,7 +11,7 @@
                     <input matInput placeholder="Password" name="password" [(ngModel)]="password">
                 </mat-form-field>
             </div>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <mat-radio-group [(ngModel)]="profession">
 
                     <mat-radio-button *ngFor="let item of professionValue" [value]="item">
@@ -19,11 +19,11 @@
                     </mat-radio-button>
 
                 </mat-radio-group>
-            </div>
+            </div> -->
             <div class="col-md-12">
                 <div class="example-button-row">
                     <button mat-raised-button color="primary" (click)="onLogin(username, password, profession)"
-                        [disabled]="(!password || !username || !profession)">Login</button>
+                        [disabled]="(!password || !username)">Login</button>
                 </div>
             </div>
         </div>

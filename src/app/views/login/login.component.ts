@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonService } from 'src/app/sevices/common.service';
+import { HttpService } from 'src/app/sevices/http.service';
 
 @Component({
   selector: 'app-login',
@@ -14,32 +15,43 @@ export class LoginComponent implements OnInit {
   password: string;
   profession: string;
   professionValue: string[] = ['Admin', 'Teacher', 'Student'];
+  userDetails: any;
 
   constructor(private snackbar: MatSnackBar, private route: ActivatedRoute, private router: Router,
-    private commonService: CommonService) { }
+    private commonService: CommonService, private httpService: HttpService) { }
 
   ngOnInit(): void {
+    this.httpService.getData().subscribe((res: any) => {
+      console.log("value", res)
+      this.userDetails = res.userDetails;
+    })
   }
 
-  onLogin(username, password, profession){
+  onLogin(username, password, profession) {
     console.log(username, password);
     console.log(profession);
+
     let data = {
       username,
       password,
       profession
     }
-    this.commonService.logDetails(data);
-    // let result = this.people.filter((res: any) => {
-    //   if(res.name.toLowerCase() == username.toLowerCase() && res.birth_year.toLowerCase() == password.toLowerCase()){
-    //     return res;
-    //   }
-    // })
-    // if(result.length > 0){
+
+    
+    console.log(this.userDetails)
+    let result = this.userDetails.filter((res: any) => {
+      if(res.userName.toLowerCase() == username.toLowerCase()){
+        return res;
+      }
+    })
+
+    this.commonService.logDetails(result);
+
+    if(result.length > 0){
       this.router.navigate(['dashboard']);
-    // }else{
-    //   this.snackbar.open('Username and Password is incorrect','', {duration: 2000});
-    // }
+    }else{
+      this.snackbar.open('Username and Password is incorrect','', {duration: 2000});
+    }
   }
 
 }

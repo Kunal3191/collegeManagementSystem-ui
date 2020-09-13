@@ -1,0 +1,24 @@
+{
+    "userDetails": [
+        {
+            "userName": "Shahbaz",
+            "password": "test",
+            "profession": "Admin"
+        },
+        {
+            "userName": "Kunal",
+            "password": "test",
+            "profession": "Admin"
+        },
+        {
+            "userName": "Anurag",
+            "password": "test",
+            "profession": "Student"
+        },
+        {
+            "userName": "Mayank",
+            "password": "test",
+            "profession": "Teacher"
+        }
+    ]
+}
