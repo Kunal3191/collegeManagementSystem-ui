@@ -1,2 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.db-headertxt {
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+.small-text {
+    font-size: 0.75rem;
+    margin-bottom: .15rem;
+}
+
+.blue-text {
+    color: #254399;
+}
+
+.orange-text {
+    color: #de7404 !important;
+    margin-bottom: .15rem;
+}
+
+.grey-text {
+    color: #6b6b6b!important;
+}

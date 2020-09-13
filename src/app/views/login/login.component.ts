@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CommonService } from 'src/app/sevices/common.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
   profession: string;
   professionValue: string[] = ['Admin', 'Teacher', 'Student'];
 
-  constructor(private snackbar: MatSnackBar, private route: ActivatedRoute, private router: Router) { }
+  constructor(private snackbar: MatSnackBar, private route: ActivatedRoute, private router: Router,
+    private commonService: CommonService) { }
 
   ngOnInit(): void {
   }
@@ -22,6 +24,12 @@ export class LoginComponent implements OnInit {
   onLogin(username, password, profession){
     console.log(username, password);
     console.log(profession);
+    let data = {
+      username,
+      password,
+      profession
+    }
+    this.commonService.logDetails(data);
     // let result = this.people.filter((res: any) => {
     //   if(res.name.toLowerCase() == username.toLowerCase() && res.birth_year.toLowerCase() == password.toLowerCase()){
     //     return res;

@@ -1,0 +1,11 @@
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+@Injectable({providedIn: 'root'})
+export class CommonService {
+    loginDetails: BehaviorSubject<any> = new BehaviorSubject({});
+
+    logDetails(data){
+        this.loginDetails.next(data);
+    }
+}

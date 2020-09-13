@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/sevices/common.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  loginData: any;
+
+  constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
+    this.commonService.loginDetails.subscribe(val => {
+      console.log("details", val);
+      this.loginData = val;
+    })
   }
 
 }
