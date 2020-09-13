@@ -6,3 +6,8 @@
     display: flex;
     margin-top: 60px;
 }
+
+.move{
+  display: inline; 
+  float: right;
+}

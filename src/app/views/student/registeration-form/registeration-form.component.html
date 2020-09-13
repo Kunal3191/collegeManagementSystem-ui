@@ -1,0 +1,74 @@
+<h1 mat-dialog-title>Registration Form</h1>
+<form [formGroup]="registerationForm" (ngSubmit)="saveDetails()">
+    <div mat-dialog-content>
+        <div class="row">
+            <!-- <div class="col-sm-4"> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="First Name" formControlName="studentFirstName">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentFirstName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+            <!-- </div>
+            <div class="col-sm-4"> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="Middle Name" formControlName="studentMiddleName">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentMiddleName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+            <!-- </div>
+            <div class="col-sm-4"> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="Last Name" formControlName="studentLastName">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+            <!-- </div> -->
+        </div>
+        <div class="row">
+                <mat-form-field style="margin-left: 20px;">
+                    <mat-label>Gender</mat-label>
+                    <mat-select formControlName="gender">
+                        <mat-option [value]="gender" *ngFor="let gender of genders">{{gender}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('gender').errors?.required">First Name is
+                Required
+            </mat-error> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="Father Name" formControlName="fatherName">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="Mother Name" formControlName="motherName">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+        </div>
+        <div class="row">
+                <mat-form-field style="margin-left: 20px;">
+                    <mat-label>Branch</mat-label>
+                    <mat-select formControlName="branch">
+                        <mat-option [value]="branch" *ngFor="let branch of branchs">{{branch}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+                <mat-form-field style="margin-left: 20px;">
+                    <input matInput placeholder="Address" formControlName="address">
+                </mat-form-field>
+                <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
+                Required
+            </mat-error> -->
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <button type="submit" mat-raised-button color="primary" [disabled]="!registerationForm.valid">Submit</button>
+    </div>
+</form>

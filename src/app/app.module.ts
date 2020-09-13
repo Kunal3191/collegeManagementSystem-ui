@@ -8,12 +8,16 @@ import { SharedModule } from './shared/shared.component';
 import { LoginComponent } from './views/login/login.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterationFormComponent } from './views/student/registeration-form/registeration-form.component';
+import { StudentComponent } from './views/student/student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterationFormComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
