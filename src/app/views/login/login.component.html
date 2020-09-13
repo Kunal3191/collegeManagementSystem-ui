@@ -1,0 +1,31 @@
+<div class="example-container">
+    <div class="container-fluid">
+        <div class="row centerDiv">
+            <div class="col-md-12">
+                <mat-form-field>
+                    <input matInput placeholder="Username" name="username" [(ngModel)]="username">
+                </mat-form-field>
+            </div>
+            <div class="col-md-12">
+                <mat-form-field>
+                    <input matInput placeholder="Password" name="password" [(ngModel)]="password">
+                </mat-form-field>
+            </div>
+            <div class="col-md-12">
+                <mat-radio-group [(ngModel)]="profession">
+
+                    <mat-radio-button *ngFor="let item of professionValue" [value]="item">
+                        {{item}}
+                    </mat-radio-button>
+
+                </mat-radio-group>
+            </div>
+            <div class="col-md-12">
+                <div class="example-button-row">
+                    <button mat-raised-button color="primary" (click)="onLogin(username, password, profession)"
+                        [disabled]="(!password || !username || !profession)">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
