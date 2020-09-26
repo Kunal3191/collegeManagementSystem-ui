@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CollegeMgnSystem"
+    }
+  },
+  "defaultProject": "CollegeMgnSystem",
+  "cli": {
+    "analytics": false
+  }
 }

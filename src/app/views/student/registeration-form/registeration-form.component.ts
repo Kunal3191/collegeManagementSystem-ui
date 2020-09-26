@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { HttpService } from 'src/app/sevices/http.service';
 
 @Component({
   selector: 'app-registeration-form',
@@ -16,7 +17,7 @@ export class RegisterationFormComponent implements OnInit {
   branchs: string[] = [ "Computer Science", "Electronics", "Electrical", "Mechanical" ];
 
   constructor(private formBuilder: FormBuilder, public MatDialogRef: MatDialogRef<RegisterationFormComponent>,
-    @Inject(MAT_DIALOG_DATA) data) { 
+    @Inject(MAT_DIALOG_DATA) data, private httpService: HttpService) { 
       if (data) {
         this.dialogData = data.dialogData;
         this.registerationObj = data.dialogData
@@ -30,31 +31,43 @@ export class RegisterationFormComponent implements OnInit {
 
   resetRegisterationForm() {
     this.registerationObj = {
-      _id: null,
-      studentFirstName: null,
+      id: null,
+      firstName: null,
       studentMiddleName: null,
-      studentLastName: null,
+      lastName: null,
       gender: null,
       fatherName: null,
       motherName: null,
       branch: null,
       address: null,
-
+      email: null,
+      password: null,
+      active: null
     }
   }
 
   bindRegisterationFrom() {
     this.registerationForm = this.formBuilder.group({
-      _id: [this.registerationObj._id],
-      studentFirstName: [this.registerationObj.studentFirstName],
+      id: [this.registerationObj._id],
+      firstName: [this.registerationObj.firstName],
       studentMiddleName: [this.registerationObj.studentMiddleName],
-      studentLastName: [this.registerationObj.studentLastName],
+      lastName: [this.registerationObj.lastName],
       gender: [this.registerationObj.gender],
       fatherName: [this.registerationObj.fatherName],
       motherName: [this.registerationObj.motherName],
       branch: [this.registerationObj.branch],
       address: [this.registerationObj.address],
+      email: [this.registerationObj.email],
+      password: [this.registerationObj.password],
+      active: [this.registerationObj.active]
     })
+  }
+
+  saveDetails(){
+    console.log("details", this.registerationForm.value);
+    this.httpService.saveStudent(this.registerationForm.value).subscribe(res => {
+      console.log(res);
+    });
   }
 
 }

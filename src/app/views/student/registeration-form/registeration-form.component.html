@@ -4,7 +4,7 @@
         <div class="row">
             <!-- <div class="col-sm-4"> -->
                 <mat-form-field style="margin-left: 20px;">
-                    <input matInput placeholder="First Name" formControlName="studentFirstName">
+                    <input matInput placeholder="First Name" formControlName="firstName">
                 </mat-form-field>
                 <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentFirstName').errors?.required">First Name is
                 Required
@@ -20,7 +20,7 @@
             <!-- </div>
             <div class="col-sm-4"> -->
                 <mat-form-field style="margin-left: 20px;">
-                    <input matInput placeholder="Last Name" formControlName="studentLastName">
+                    <input matInput placeholder="Last Name" formControlName="lastName">
                 </mat-form-field>
                 <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
                 Required
@@ -66,6 +66,9 @@
                 <!-- <mat-error class="mt-1" *ngIf="registerationForm.get('studentLastName').errors?.required">First Name is
                 Required
             </mat-error> -->
+            <mat-form-field style="margin-left: 20px;">
+                <input matInput placeholder="Email Id" formControlName="email">
+            </mat-form-field>
         </div>
     </div>
     <div class="dialog-footer">
