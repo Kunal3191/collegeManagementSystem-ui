@@ -11,3 +11,9 @@
   display: inline; 
   float: right;
 }
+
+.example-container {
+  width: 178px;
+  height: 600px;
+  display: inline-block;
+}

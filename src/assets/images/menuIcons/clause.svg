@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.788 24.687">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="clavas-1" transform="translate(-211 -98)">
+    <g id="Rectangle_777" data-name="Rectangle 777" class="cls-1" transform="translate(211 98)">
+      <rect class="cls-3" width="20.788" height="24.687" rx="3"/>
+      <rect class="cls-4" x="1" y="1" width="18.788" height="22.687" rx="2"/>
+    </g>
+    <line id="Line_106" data-name="Line 106" class="cls-1" x2="10.34" transform="translate(216.17 116.368)"/>
+    <path id="Union_16" data-name="Union 16" class="cls-2" d="M-7978.359,836.842a.64.64,0,0,1-.641-.641.64.64,0,0,1,.641-.641h.214v-4.277h-.214a.642.642,0,0,1-.641-.643.642.642,0,0,1,.641-.641h3.851a.641.641,0,0,1,.641.641.642.642,0,0,1-.641.643h-.214v1.284h6a.856.856,0,0,1,.855.855.856.856,0,0,1-.855.855h-6v1.284h.214a.64.64,0,0,1,.641.641.64.64,0,0,1-.641.641Z" transform="translate(7544.438 3373.508) rotate(30)"/>
+  </g>
+</svg>

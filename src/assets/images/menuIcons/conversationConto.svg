@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5faf7;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #254495;
+      }
+
+      .cls-3 {
+        stroke: #59bac5;
+      }
+
+      .cls-4 {
+        fill: #254495;
+      }
+
+      .cls-5 {
+        fill: #59bac5;
+      }
+    </style>
+  </defs>
+  <g id="conventional-conto" transform="translate(-284 -35)">
+    <circle id="circle" class="cls-1" cx="22" cy="22" r="22" transform="translate(284 35)"/>
+    <g id="Group_572" data-name="Group 572" transform="translate(-1273 5)">
+      <path id="Path_234" data-name="Path 234" class="cls-2" d="M-1640.472,1580.547h5.487s3.373-.159,3.359,3.083,0,5.018,0,5.018" transform="translate(3219.779 -1538.488)"/>
+      <path id="Path_237" data-name="Path 237" class="cls-3" d="M-1636.4,1588.434h-5.8s-3.284.155-3.27-3,0-4.885,0-4.885" transform="translate(3218.204 -1525.842)"/>
+      <path id="Path_235" data-name="Path 235" class="cls-4" d="M-1599.362,1612.5l3.557,3.661,3.66-3.661" transform="translate(3183.693 -1564.433)"/>
+      <path id="Path_236" data-name="Path 236" class="cls-5" d="M-1592.145,1616.158l-3.557-3.66-3.661,3.66" transform="translate(3168.249 -1559.893)"/>
+      <path id="Path_396" data-name="Path 396" class="cls-4" d="M0,0H9.577V9.577H0Z" transform="translate(1568 41)"/>
+      <rect id="Rectangle_748" data-name="Rectangle 748" class="cls-5" width="9.577" height="9.577" rx="4.789" transform="translate(1583.05 53.313)"/>
+    </g>
+  </g>
+</svg>

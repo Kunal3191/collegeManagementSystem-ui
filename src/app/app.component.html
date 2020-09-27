@@ -1,1 +1,32 @@
-<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->
+<div class="db-holder" *ngIf="routerUrl != ''">
+    <div>
+        <div style="margin: -30px 0px 0px 0px; padding: 0px;" *ngIf="routerUrl != 'login'">
+            <div class="headercontainer">
+                <app-head-nav (Expanded)="drawer.toggle()"></app-head-nav>
+
+            </div>
+
+        </div>
+        <!-- Section one-->
+        <div class="pageheader make-relative" style="margin-top: 90px;">
+            <div style="display: inline;float: left;width:178px;" *ngIf="routerUrl != 'login'">
+                <mat-drawer-container class="example-container">
+                    <mat-drawer #drawer [mode]="drawer">
+                        <app-side-nav></app-side-nav>
+                    </mat-drawer>
+                </mat-drawer-container>
+            </div>
+            <div style="display: inline;width: 80%;">
+                <div class="col-md-4 " style="display: inline-block;">
+                    <router-outlet></router-outlet>
+                    <!-- <app-student></app-student> -->
+                   
+                </div>
+                <button *ngIf="(routerUrl != 'login' && loginData?.profession == 'Admin')" type="button" style="float: right;margin-right: 25px;" mat-raised-button color="primary" (click)="onRegister()">Register Student</button>
+            </div>
+            
+        </div>
+    </div>
+</div>

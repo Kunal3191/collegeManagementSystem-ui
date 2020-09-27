@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <a class="applogo" routerLink="/dashboard">
+        <img class="nonMobileView" src="assets/images/ril-rcontract-logo1.png">
+        <!-- <span style="margin-top: 6px;">College Management</span> -->
+        <!-- <img class="altLogo" src="assets/images/ril-rcontract-logo-mob.png"> -->
+    </a>
+    <button type="button" class="menu-togglebtn" aria-label="Toggle sidenav" mat-icon-button (click)="ExpandColapse()">
+        <mat-icon style="font-size: 18px !important;" aria-label="Side nav toggle icon">view_headline</mat-icon>
+    </button>
+    <div style="display: contents;">
+    <button [matMenuTriggerFor]="menu" class="rhs-menu-control-btn1" matTooltip="Welcome {{(userInfo?.firstName ? userInfo?.firstName : '') + ' ' + (userInfo?.lastName ? userInfo?.lastName : '')}}">
+        <!-- <span> {{getUserName()}} </span> -->
+        <span class="nonMobileViewIB">{{(userInfo?.firstName ? userInfo?.firstName : '') + ' ' +
+            (userInfo?.lastName ? userInfo?.lastName : '') | titlecase}}</span>
+        <img src="assets/images/profile-2.svg">
+        <!-- <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 30px; vertical-align: top; margin-right: 10px; margin-left: 5px;"></i> -->
+    </button>
+</div>
+    <div class="rhs-menu-control">
+        <mat-menu #menu="matMenu" yPosition="below" [overlapTrigger]="false" class="mr-2">
+            <button mat-menu-item (click)="gotoUserProfile()">
+                <mat-icon class="fas fa-user"></mat-icon>
+                <span>Profile</span>
+            </button>
+            <button mat-menu-item (click)="logout()">
+                <mat-icon class="fas fa-sign-out-alt"></mat-icon>
+                <span>Log Out</span>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

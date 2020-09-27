@@ -2,21 +2,29 @@
     "userDetails": [
         {
             "userName": "Shahbaz",
+            "firstName": "Shahbaz",
+            "lastName": "Alam",
             "password": "test",
             "profession": "Admin"
         },
         {
             "userName": "Kunal",
+            "firstName": "Kunal",
+            "lastName": "Kumar",
             "password": "test",
             "profession": "Admin"
         },
         {
             "userName": "Anurag",
+            "firstName": "Anurag",
+            "lastName": "Yadaoo",
             "password": "test",
             "profession": "Student"
         },
         {
             "userName": "Mayank",
+            "firstName": "Mayank",
+            "lastName": "Bhushan",
             "password": "test",
             "profession": "Teacher"
         }

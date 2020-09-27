@@ -17,40 +17,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.commonService.loginDetails.subscribe(val => {
       console.log("details", val);
-      this.loginData = val;
+      this.loginData = val[0];
     })
   }
 
-  onRegister(){
-    try {
-      const objMatDialogConfig = new MatDialogConfig();
-      objMatDialogConfig.panelClass = "dialog-md";
-
-      let item = {
-        headerText: "Add Student",
-      };
-
-      objMatDialogConfig.data = {
-        dialogData: item
-      };
-
-      let refMatDialog = this.MatDialog.open(
-        RegisterationFormComponent,
-        objMatDialogConfig
-      );
-
-      var actionResult: boolean = false;
-
-      refMatDialog.afterClosed().subscribe(value => {
-        actionResult = value;
-        if (value) {
-
-        } else {
-        }
-      });
-    } catch (e) {
-      
-    }
-  }
+ 
 
 }

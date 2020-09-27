@@ -24,3 +24,211 @@
 .grey-text {
     color: #6b6b6b!important;
 }
+
+.nonMobileView {
+    display: block!important;
+}
+
+.nonMobileViewIB {
+    display: inline-block!important;
+    margin-top: 6px;
+}
+
+.mat-menu-item {
+    line-height: 40px;
+    height: 40px;
+}
+
+.rhs-menu-control {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.rhs-menu-control-btn1 {
+    background: rgba(0, 0, 0, 0) !important;
+    font-size: 14px;
+    color: #2b2d3b;
+    border: none !important;
+    height: 55px;
+    cursor: pointer;
+    float: right;
+    margin-left: 1130px;
+}
+
+.rhs-menu-control-btn1 img {
+    width: 30px;
+    /*height: 30px;*/
+    /*border-radius: 50%;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.mypage-sidenav {
+    background-color: #2f363d;
+    color: #fff;
+}
+
+.mat-nav-list a.mat-list-item.active {
+    /*background: #4a535f;*/
+    color: #e8b84f;
+    background: lightslategray;
+}
+
+.mat-list-item:hover .menuImagename {
+    opacity: 1;
+}
+
+.mypage-sidenav .mat-list,
+.mypage-sidenav .mat-nav-list,
+.mypage-sidenav .mat-selection-list {
+    padding-top: 55px;
+    /* width: 200px; */
+}
+
+.mypage-sidenav .mat-list-option.mat-list-item-focus,
+.mypage-sidenav .mat-list-option:hover,
+.mypage-sidenav .mat-nav-list .mat-list-item.mat-list-item-focus,
+.mypage-sidenav .mat-nav-list .mat-list-item:hover,
+.mypage-sidenav .mat-nav-list .mat-list-item.expanded:hover {
+    /*background: #0652aa;*/
+    background:  #fff;;
+}
+
+.mypage-sidenav .mat-nav-list .mat-list-item {
+    padding-left: 0 !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mypage-sidenav .mat-list-item .material-icons {
+    font-size: 18px;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px 0 0;
+    color:  #fff;;
+}
+
+.mypage-sidenav .mat-list-item:hover .material-icons {
+    color: #fff;
+}
+
+.mypage-sidenav div.ng-star-inserted,
+.mypage-sidenav .mat-nav-list .mat-list-item.expanded {
+    background:  #fff;
+}
+
+.mypage-sidenav .mat-nav-list .mat-list-item .ng-star-inserted {
+    position: absolute;
+    right: 0;
+}
+
+.mypage-sidenav .mat-list .mat-list-item,
+.mypage-sidenav .mat-list .mat-list-option,
+.mypage-sidenav .mat-nav-list .mat-list-item,
+.mypage-sidenav .mat-nav-list .mat-list-option,
+.mypage-sidenav .mat-selection-list .mat-list-item,
+.mypage-sidenav .mat-selection-list .mat-list-option {
+    height: 40px !important;
+}
+
+.mypage-sidenav .mat-nav-list .mat-list-item .ng-star-inserted {
+    top: calc(50% - 12px);
+}
+
+.menuImagename {
+    opacity: 0.6;
+}
+
+.active .menuImagename {
+    opacity: 1;
+}
+
+body,
+.mat-drawer-container {
+    background: #f3f3f3;
+    font-family: 'Roboto' !important;
+    font-size: 15px;
+    /* padding-top: 5px; */
+}
+
+
+.mat-drawer-container { 
+    height: 100vh;
+    overflow: auto;
+} 
+
+
+.app-footer{
+    width: 100%;
+    background: white;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 16px 0;
+    color: #929292;
+}
+.app-height{
+    min-height: calc(100vh - 100px);
+    margin-bottom: 15px;
+}
+
+.headercontainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.headercontainer .mat-toolbar-row,
+.headercontainer .mat-toolbar-single-row {
+    height: 55px;
+}
+
+.headercontainer .mat-toolbar.mat-primary {
+    background: #ffffff;
+    color: #212121;
+    /* border-bottom: 1px solid #c8ced3; */
+    border-bottom: 1px solid #f5cd3d;
+    padding: 0 16px 0 0;
+}
+
+.headercontainer .applogo {
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 55px;
+    box-sizing: border-box;
+}
+
+
+/* .headercontainer .applogo img{
+    width: 25px;
+    display: block;
+    margin: 15px 0 0 65px;
+} */
+
+.headercontainer .applogo img {
+    width: 155px;
+    display: block;
+    margin: 15px 0 0 10px;
+}
+
+.headercontainer .menu-togglebtn {
+    margin-left: 165px;
+}
+
+@media only screen and (max-device-width: 575px) {
+    .headercontainer .applogo {
+        width: 50px;
+        left: 50px;
+    }
+    .headercontainer .applogo img {
+        margin: 15px 0 0 10px;
+    }
+    .headercontainer .menu-togglebtn {
+        margin-left: 5px;
+    }
+}

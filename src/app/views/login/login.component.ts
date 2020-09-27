@@ -37,13 +37,33 @@ export class LoginComponent implements OnInit {
       this.commonService.logDetails(user);
 
       if (user['email']) {
-        console.log("in");
         this.router.navigate(['dashboard']);
       } else {
-        console.log("out");
         this.snackbar.open('Username and Password is incorrect', '', { duration: 2000 });
       }
     })
+
+    // this.httpService.getData(username, password).subscribe((user : any) => {
+    //   this.userDetails = user.userDetails;
+    //   console.log(user)
+    //   // this.commonService.logDetails(user);
+
+    //   let result = user.userDetails.filter((res: any) => {
+    //     if(res.userName.toLowerCase() == username.toLowerCase()){
+    //       return res;
+    //     }
+    //   })
+  
+    //   this.commonService.logDetails(result);
+  
+    //   if(result.length > 0){
+    //     this.router.navigate(['dashboard']);
+    //   }else{
+    //     this.snackbar.open('Username and Password is incorrect','', {duration: 2000});
+    //   }
+
+      
+    // })
 
     // let data = {
     //   username,
@@ -51,13 +71,6 @@ export class LoginComponent implements OnInit {
     //   profession
     // }
 
-
-    // console.log(this.userDetails)
-    // let result = this.userDetails.filter((res: any) => {
-    //   if(res.userName.toLowerCase() == username.toLowerCase()){
-    //     return res;
-    //   }
-    // })
 
 
   }

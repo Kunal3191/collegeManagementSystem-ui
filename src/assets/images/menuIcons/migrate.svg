@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.487 25.627">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="migrat-1" transform="translate(-487.506 -98.638)">
+    <path id="Path_234" data-name="Path 234" class="cls-1" d="M-1640.472,1580.547h4.735s2.91-.137,2.9,2.661,0,4.33,0,4.33" transform="translate(2139.229 -1477.633)"/>
+    <path id="Path_237" data-name="Path 237" class="cls-1" d="M-1637.644,1587.352h-5.006s-2.834.133-2.822-2.59,0-4.216,0-4.216" transform="translate(2138.555 -1466.72)"/>
+    <path id="Path_235" data-name="Path 235" class="cls-2" d="M-1599.362,1612.5l3.07,3.159,3.159-3.159" transform="translate(2102.454 -1504.402)"/>
+    <path id="Path_236" data-name="Path 236" class="cls-2" d="M-1593.134,1615.656l-3.069-3.158-3.159,3.158" transform="translate(2089.127 -1500.484)"/>
+    <path id="Path_396" data-name="Path 396" class="cls-2" d="M0,0H8.487V10.627H0Z" transform="translate(502.506 113.638)"/>
+    <path id="Path_402" data-name="Path 402" class="cls-2" d="M0,0H8.487V10.627H0Z" transform="translate(487.506 98.638)"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.256 29.458">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_7_1" data-name="Symbol 7 – 1" transform="translate(-27 1786.939)">
+    <path id="Path_11" data-name="Path 11" class="cls-1" d="M10.691,68.4h-5.1A5.6,5.6,0,0,1,0,62.806V60.012" transform="translate(28 -1826.881)"/>
+    <path id="Path_12" data-name="Path 12" class="cls-1" d="M10.691,8.388h-5.1A5.6,5.6,0,0,1,0,2.794V0" transform="matrix(-1, 0.017, -0.017, -1, 55.236, -1777.535)"/>
+    <path id="Path_13" data-name="Path 13" class="cls-1" d="M10.691,8.388h-5.1A5.6,5.6,0,0,1,0,2.794V0" transform="translate(46.867 -1758.573) rotate(-90)"/>
+    <path id="Path_14" data-name="Path 14" class="cls-1" d="M10.691,8.388h-5.1A5.6,5.6,0,0,1,0,2.794V0" transform="translate(36.513 -1785.809) rotate(89)"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" class="cls-2" cx="1.74" cy="1.74" rx="1.74" ry="1.74" transform="translate(46.072 -1777.396)"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" class="cls-2" cx="1.74" cy="1.74" rx="1.74" ry="1.74" transform="translate(34.276 -1777.396)"/>
+    <path id="Path_15" data-name="Path 15" class="cls-1" d="M880.487,665.609v5.835s.088,2.506-2.2.916" transform="translate(-838.498 -2441.714)"/>
+    <path id="Path_16" data-name="Path 16" class="cls-1" d="M886.019,679.9s4.272,2.93,8.408,0" transform="translate(-848.42 -2445.031)"/>
+  </g>
+</svg>

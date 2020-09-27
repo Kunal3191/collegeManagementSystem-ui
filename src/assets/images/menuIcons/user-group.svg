@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.678 21.325">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="user-group-1" transform="translate(-416 -100)">
+    <g id="Group_234" data-name="Group 234" transform="translate(423.966 101)">
+      <g id="Group_233" data-name="Group 233" transform="translate(0 0)">
+        <path id="Path_82" data-name="Path 82" class="cls-1" d="M92.264,85.939a6.551,6.551,0,0,0-13.1,0c0,.586-.125,1.486,2.3,1.505l9.166-.045C92.425,87.39,92.264,86.5,92.264,85.939Zm-6.5-10.608a3.606,3.606,0,1,0-3.611-3.606A3.609,3.609,0,0,0,85.764,75.331Z" transform="translate(-79.16 -68.119)"/>
+      </g>
+    </g>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="2.978" cy="2.974" rx="2.978" ry="2.974" transform="translate(436.472 103.062)"/>
+    <path id="Path_83" data-name="Path 83" class="cls-3" d="M126.494,102.481a5.377,5.377,0,0,0-9.462-3.495,7.12,7.12,0,0,1,4.21,4.713l3.905-.019C126.626,103.673,126.494,102.944,126.494,102.481Z" transform="translate(318.181 12.381)"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" class="cls-2" cx="2.978" cy="2.974" rx="2.978" ry="2.974" transform="translate(418.249 103.062)"/>
+    <path id="Path_84" data-name="Path 84" class="cls-3" d="M61.035,102.481A5.378,5.378,0,0,1,70.5,98.986a7.121,7.121,0,0,0-4.21,4.713l-3.905-.019C60.9,103.673,61.035,102.944,61.035,102.481Z" transform="translate(354.968 12.381)"/>
+  </g>
+</svg>
