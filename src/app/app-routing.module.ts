@@ -8,9 +8,9 @@ import { CourseListComponent } from './views/student/course/course-list/course-l
 const routes: Routes = [
   { path: '', component:LoginComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', loadChildren: () => import(`./views/dashboard/dashboard.module`).then(m => m.DashboardModule) },
+  { path: 'course/:id', loadChildren: () => import(`./views/student/course/course.module`).then(m => m.CourseModule) },
   // { path: 'student', loadChildren: () => import(`./views/student/student.module`).then(m => m.StudentModule)  },
-  // { path: 'course-list', component: CourseListComponent }
+  { path: 'course-list', component: CourseListComponent }
 ];
 
 @NgModule({

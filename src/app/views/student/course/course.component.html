@@ -1,25 +1,21 @@
-<div class="db-holder ">
-    <div>
-        <div class="col-md-12 display">
-            <div class="col-md-4 " style="flex: 1 1 auto;">
-                <mat-card (click)="onSelectCourse()" class="example-card" *ngFor="let course of courses?.currentCourse;">
-                    <mat-card-header>
-                        <mat-card-title>Current Course</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <a href="#">
-                            {{course.courseName}}
-                        </a>
-                        <p>
-                            {{course.term}}
-                        </p>
-                    </mat-card-content>
-                    <!-- <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions> -->
-                </mat-card>
-            </div>
+<!-- <router-outlet></router-outlet> -->
+
+<div class="contract-detail-container clearfix ">
+    <div class="float-left contract-detail-lhs">
+        <div class="contract-pg-nav">
+            <ul class="main-list">
+                <li> Course
+                    <ul class="sub-list">
+                        <li routerLink="course-details" routerLinkActive="active">
+                            Details</li>
+                        <li routerLink="grade" routerLinkActive="active">
+                            Grade</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="float-right contract-detail-rhs">
+        <router-outlet></router-outlet>
     </div>
 </div>

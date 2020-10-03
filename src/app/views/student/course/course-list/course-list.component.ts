@@ -12,21 +12,21 @@ export class CourseListComponent implements OnInit {
 
   courseData = {
    curentCourse : [
-    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes'}
+    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes', id: 1},
+    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes', id: 2},
+    {position: 1, courseName: 'Current Course', term: "Fall 2020", enrolledAs: 'Student', published: 'Yes', id: 3}
 
   ],
   allCourses: [
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'},
-    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes'}
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 4},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 5},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 6},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 7},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 8},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 9},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 10},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 11},
+    {position: 1, courseName: 'Old Course', term: "Fall 2019", enrolledAs: 'Student', published: 'Yes', id: 12}
   ]
 }
 

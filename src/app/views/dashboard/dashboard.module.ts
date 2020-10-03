@@ -23,13 +23,9 @@ import { SharedModule } from 'src/app/shared/shared.component';
   exports: [
     LayoutModule,
     StudentComponent,
-    CourseListComponent,
-    CourseComponent,
   ],
   declarations: [
     StudentComponent,
-    CourseListComponent,
-    CourseComponent,
     DashboardComponent
   ],
   entryComponents: [

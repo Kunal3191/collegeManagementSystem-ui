@@ -1,19 +1,16 @@
 .example-card {
-    max-width: 400px;
-  }
+  max-width: 400px;
+  display: inline-block;
+  padding: 30px;
+  margin-left: 50px;
+}
 
 .display{
-    display: flex;
-    margin-top: 60px;
+  display: flex;
+  margin-top: 60px;
 }
 
 .move{
-  display: inline; 
-  float: right;
-}
-
-.example-container {
-  width: 178px;
-  height: 600px;
-  display: inline-block;
+display: inline; 
+float: right;
 }

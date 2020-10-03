@@ -31,39 +31,39 @@ export class LoginComponent implements OnInit {
     console.log(username, password);
     console.log(profession);
 
-    this.httpService.getData(username, password).subscribe((user) => {
-      console.log(user);
-      // this.userDetails = user;
-      this.commonService.logDetails(user);
+    // this.httpService.getData(username, password).subscribe((user) => {
+    //   console.log(user);
+    //   // this.userDetails = user;
+    //   this.commonService.logDetails(user);
 
-      if (user['email']) {
-        this.router.navigate(['dashboard']);
-      } else {
-        this.snackbar.open('Username and Password is incorrect', '', { duration: 2000 });
-      }
-    })
-
-    // this.httpService.getData(username, password).subscribe((user : any) => {
-    //   this.userDetails = user.userDetails;
-    //   console.log(user)
-    //   // this.commonService.logDetails(user);
-
-    //   let result = user.userDetails.filter((res: any) => {
-    //     if(res.userName.toLowerCase() == username.toLowerCase()){
-    //       return res;
-    //     }
-    //   })
-  
-    //   this.commonService.logDetails(result);
-  
-    //   if(result.length > 0){
+    //   if (user['email']) {
     //     this.router.navigate(['dashboard']);
-    //   }else{
-    //     this.snackbar.open('Username and Password is incorrect','', {duration: 2000});
+    //   } else {
+    //     this.snackbar.open('Username and Password is incorrect', '', { duration: 2000 });
     //   }
+    // })
+
+    this.httpService.getData(username, password).subscribe((user : any) => {
+      this.userDetails = user.userDetails;
+      console.log(user)
+      // this.commonService.logDetails(user);
+
+      let result = user.userDetails.filter((res: any) => {
+        if(res.userName.toLowerCase() == username.toLowerCase()){
+          return res;
+        }
+      })
+  
+      this.commonService.logDetails(result);
+  
+      if(result.length > 0){
+        this.router.navigate(['dashboard']);
+      }else{
+        this.snackbar.open('Username and Password is incorrect','', {duration: 2000});
+      }
 
       
-    // })
+    })
 
     // let data = {
     //   username,

@@ -220,6 +220,14 @@ body,
     margin-left: 165px;
 }
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
 @media only screen and (max-device-width: 575px) {
     .headercontainer .applogo {
         width: 50px;

@@ -56,7 +56,7 @@ export class HeadNavComponent implements OnInit {
   sessionObject: any;
   logout() {
     try {
-
+      this.router.navigate(['login']);
     }
     catch (e) {
       console.log("error", e);
