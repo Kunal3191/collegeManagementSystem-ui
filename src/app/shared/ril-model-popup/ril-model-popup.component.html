@@ -1,0 +1,36 @@
+<form #frmConfirmDialog="ngForm" name="confirmdialog">
+    <div class="container-fluid">
+        <div class="dialog-header row">
+            <mat-icon class="">{{dialogHeaderIcon}}</mat-icon>
+            <span class="dialog-header-txt"> {{dialogHeader}} </span>
+        </div>
+        <div class="dialog-body py-3" style="margin-top: 29px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="dialog-body-text">
+                        {{dialogMessage}}
+                    </span>
+                    <mat-form-field style="min-width: 300px;" *ngIf=this.showInputField class="example-full-width">
+                        <input matInput placeholder="Template Name" [(ngModel)]=inputFieldValue name="contractname">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="dialog-footer" style="text-align: right; margin-top: 29px;">
+        <div class="my-2 text-right">
+            <button class="mr-3 btn-blue" style="margin-right: 10px;" mat-flat-button color="primary" type="submit" (click)="onPositiveBtn()">
+                <!-- <button class="mr-2" mat-stroked-button color="out-green-btn" type="submit" (click)="onPositiveBtn()"> -->
+                <!-- <i class="fa fa-check"></i> {{dialogPositiveBtn}} -->
+                <!--<mat-icon>{{dialogPositiveBtnIcon}}</mat-icon>-->
+                {{dialogPositiveBtn}}
+            </button>
+            <button class="mr-3" mat-flat-button color="warn" type="submit" (click)="onNegativeBtn()">
+                <!-- <i class="fa fa-remove"></i> {{dialogNegativeBtn}} -->
+                <!--<mat-icon>{{dialogNegativeBtnIcon}}</mat-icon> -->
+                {{dialogNegativeBtn}}
+            </button>
+        </div>
+    </div>
+</form>

@@ -9,133 +9,76 @@
         ]
     },
     {
-        "displayName": "Grade",
+        "displayName": "Student",
         "iconName": "assets/images/menuIcons/masters.svg",
         "children": [
             {
-                "displayName": "Terms",
+                "displayName": "Details",
                 "iconName": "assets/images/menuIcons/terms.svg",
-                "route": "term",
+                "route": "student/student-details",
                 "rolesRequired": [
                     "admin"
                 ]
             },
             {
-                "displayName": "Clause Template",
+                "displayName": "Course",
                 "iconName": "assets/images/menuIcons/clause.svg",
-                "route": "clause-template",
                 "rolesRequired": [
                     "admin"
-                ]
-            },
-            {
-                "displayName": "Contract Template",
-                "iconName": "assets/images/menuIcons/template.svg",
-                "route": "contract-template",
-                "rolesRequired": [
-                    "admin"
-                ]
-            },
-            {
-                "displayName": "Contract Type",
-                "iconName": "assets/images/menuIcons/template.svg",
-                "route": "contract-type",
-                "rolesRequired": [
-                    "admin"
-                ]
-            },
-            {
-                "displayName": "Organization",
-                "iconName": "assets/images/menuIcons/template.svg",
-                "route": "organization",
-                "rolesRequired": [
-                    "admin"
+                ],
+                "children": [
+                    {
+                        "displayName": "Details",
+                        "iconName": "assets/images/menuIcons/template.svg",
+                        "route": "student/course-details",
+                        "rolesRequired": [
+                            "admin"
+                        ]
+                    },
+                    {
+                        "displayName": "Grade",
+                        "iconName": "assets/images/menuIcons/template.svg",
+                        "route": "student/grade",
+                        "rolesRequired": [
+                            "admin"
+                        ]
+                    }
                 ]
             }
         ]
     },
     {
-        "displayName": "Administration",
+        "displayName": "Teacher",
         "iconName": "assets/images/menuIcons/Administration1.png",
         "rolesRequired": [
             "admin"
         ],
         "children": [
             {
-                "displayName": "Access",
+                "displayName": "Details",
                 "iconName": "assets/images/menuIcons/Access1.png",
+                "route": "teacher/teacher-details",
                 "rolesRequired": [
                     "admin"
-                ],
-                "children": [
-                    {
-                        "displayName": "Permissions",
-                        "iconName": "assets/images/menuIcons/user-group.svg",
-                        "route": "permission-list",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    },
-                    {
-                        "displayName": "Permission Groups",
-                        "iconName": "assets/images/menuIcons/user-group.svg",
-                        "route": "permission-group",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    },
-                    {
-                        "displayName": "User Groups",
-                        "iconName": "assets/images/menuIcons/user-group.svg",
-                        "route": "user-group",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    },
-                    {
-                        "displayName": "Users",
-                        "iconName": "assets/images/menuIcons/User Groups1.png",
-                        "route": "user-list",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    }
-                ]
-            },
-            {
-                "displayName": "Notification",
-                "iconName": "assets/images/menuIcons/Notifications1.png",
-                "rolesRequired": [
-                    "admin"
-                ],
-                "children": [
-                    {
-                        "displayName": "Templates",
-                        "iconName": "assets/images/menuIcons/Notifications1.png",
-                        "route": "notification-list",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    },
-                    {
-                        "displayName": "Events",
-                        "iconName": "assets/images/menuIcons/Notifications1.png",
-                        "route": "notification-event",
-                        "rolesRequired": [
-                            "admin"
-                        ]
-                    }
                 ]
             }
         ]
     },
     {
-        "displayName": "Migrate",
-        "iconName": "assets/images/menuIcons/migrate.svg",
-        "route": "migrate",
+        "displayName": "Library",
+        "iconName": "assets/images/menuIcons/Administration1.png",
         "rolesRequired": [
-            "admin",
-            "buyer"
+            "admin"
+        ],
+        "children": [
+            {
+                "displayName": "Details",
+                "iconName": "assets/images/menuIcons/Access1.png",
+                "route": "library/library-details",
+                "rolesRequired": [
+                    "admin"
+                ]
+            }
         ]
     }
 ]

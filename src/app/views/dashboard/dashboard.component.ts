@@ -12,54 +12,11 @@ import { Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   loginData: any;
-  courses = {
-    allCourses: [
-      {
-      courseName: "abc",
-      term: "2020",
-      enrolledAs: "student",
-      published: "Yes",
-      id: 1
-    },
-    {
-      courseName: "abc",
-      term: "2020",
-      enrolledAs: "student",
-      published: "Yes",
-      id: 2
-    },
-  ],
-    currentCourse: [
-      {
-        courseName: "abc",
-        term: "2020",
-        enrolledAs: "student",
-        published: "Yes",
-        id: 3
-      },
-      {
-        courseName: "abc",
-        term: "2020",
-        enrolledAs: "student",
-        published: "Yes",
-        id: 4
-      },
-      {
-        courseName: "abc",
-        term: "2020",
-        enrolledAs: "student",
-        published: "Yes",
-        id: 5
-      },
-      {
-        courseName: "abc",
-        term: "2020",
-        enrolledAs: "student",
-        published: "Yes",
-        id: 6
-      },
-  ]
-  }
+  listOfTabs = [
+    {name: 'Student', route: 'student'},
+    {name: 'Teacher', route: 'teacher'},
+    {name: 'Library', route: 'library'},
+  ];
 
   constructor(private commonService: CommonService, private MatDialog: MatDialog, private router: Router) { }
 
@@ -70,7 +27,41 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  onSelectCourse(courseId){
-    this.router.navigate([`course/${courseId}`]);
+  onSelectTab(route){
+    console.log(route)
+    this.router.navigate([`${route}`]);
   }
+
+  onRegister(){
+    try {
+      const objMatDialogConfig = new MatDialogConfig();
+      objMatDialogConfig.panelClass = "dialog-md";
+
+      let item = {
+        headerText: "Add Student",
+      };
+
+      objMatDialogConfig.data = {
+        dialogData: item
+      };
+
+      let refMatDialog = this.MatDialog.open(
+        RegisterationFormComponent,
+        objMatDialogConfig
+      );
+
+      var actionResult: boolean = false;
+
+      refMatDialog.afterClosed().subscribe(value => {
+        actionResult = value;
+        if (value) {
+
+        } else {
+        }
+      });
+    } catch (e) {
+
+    }
+  }
+
 }

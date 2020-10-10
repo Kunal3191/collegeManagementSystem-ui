@@ -154,11 +154,146 @@ body,
     /* padding-top: 5px; */
 }
 
+.mat-flat-button {
+    line-height: 30px !important;
+}
+
+.btn-blue {
+    background-color: #254399 !important;
+    color: #fff;
+}
+
+.btn-red {
+    background-color: #CB4F4F !important;
+    color: #fff;
+}
+
+.btn-green {
+    background-color: #21965C !important;
+    color: #fff;
+}
+
+.btn-lblue {
+    background-color: #57cfd4 !important;
+    color: #fff;
+}
+
+.btn-purple {
+    /*background-color:#a614bf!important;*/
+    background-color: #2c9cc7!important;
+    color: #fff;
+}
+
+.border-green {
+    border-color: var(--bggreen)!important;
+}
+
+.border-red {
+    border-color: var(--bgred)!important;
+}
+
+.flat-icon-btn .mat-button-wrapper {
+    padding: 0px !important;
+}
+
+.flat-icon-btn {
+    width: 30px!important;
+    height: 30px!important;
+    line-height: 30px!important;
+}
+
+.flat-icon-btn .mat-icon,
+.flat-icon-btn i {
+    font-size: 14px!important;
+    line-height: 24px!important;
+    color: #fff;
+}
+
+.flat-icon-btn .mat-button-wrapper {
+    padding: 0px !important;
+}
+
 
 .mat-drawer-container { 
     height: 100vh;
     overflow: auto;
 } 
+.mat-drawer-inner-container {
+    width: 180px !important;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mat-dialog-container {
+    padding: 10px !important;
+}
+
+.dialog-content {
+    max-height: calc(90vh - 110px);
+    overflow: auto;
+}
+
+.dialog-header {
+    background: #eaeaea;
+    font-size: 1rem;
+    padding: 10px;
+    color: #383838;
+}
+
+.dialog-header .mat-icon {
+    vertical-align: bottom !important;
+}
+
+.dialog-closex {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #a7a7a7;
+}
+
+.dialog-closex:hover {
+    color: #6d6d6d;
+}
+
+.dialog-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.dialog-xs {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 300px;
+    /*overflow: auto;*/
+}
+
+.dialog-sm {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 490px;
+    /*overflow: auto;*/
+}
+
+.dialog-md {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 700px;
+    /*overflow: auto;*/
+}
+
+.dialog-lg {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 1200px;
+    /*overflow: auto;*/
+}
+
+.dialog-vlg {
+    width: 98vw;
+    max-width: 98vw !important;
+    max-height: 94vh !important;
+    /*overflow: auto;*/
+}
 
 
 .app-footer{

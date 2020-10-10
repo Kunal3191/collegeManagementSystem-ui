@@ -3,7 +3,7 @@
   <!--<mat-icon class="routeIcon">{{item.iconName}}</mat-icon>-->
   <span class="menuImagename mr-1"> <img src="{{item.iconName}}" style="width:18px;height:18px;padding-right: 10px;"> </span>
   {{item.displayName}}
-  <span fxFlex *ngIf="item.children && item.children.length">
+  <span fxFlex *ngIf="item.children && item.children.length" style="margin-left: 10px;">
     <span fxFlex></span>
     <mat-icon class="fas fa-chevron-down" [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">     
     </mat-icon>

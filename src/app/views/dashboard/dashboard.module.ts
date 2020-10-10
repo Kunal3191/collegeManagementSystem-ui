@@ -10,7 +10,7 @@ import { MenuListItemComponent } from 'src/app/layout/menu-list-item/menu-list-i
 import { SideNavComponent } from 'src/app/layout/side-nav/side-nav.component';
 import { HeadNavComponent } from 'src/app/layout/head-nav/head-nav.component';
 import { DashboardComponent } from './dashboard.component';
-import { SharedModule } from 'src/app/shared/shared.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({

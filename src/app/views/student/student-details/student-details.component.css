@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+.addButton {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+} 
+
+.filter{
+  display: inline;
+  width: 300px;
+}
