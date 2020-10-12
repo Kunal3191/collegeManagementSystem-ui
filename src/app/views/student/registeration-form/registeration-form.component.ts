@@ -22,7 +22,7 @@ export class RegisterationFormComponent implements OnInit {
     if (data) {
       this.dialogData = data.dialogData;
       console.log(data.dialogData);
-      this.registerationObj = data.dialogData.studentData
+      this.registerationObj = data.dialogData.data
     }
   }
 

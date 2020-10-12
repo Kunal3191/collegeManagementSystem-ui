@@ -44,7 +44,7 @@ export class TeacherDetailsComponent implements OnInit {
 
       let item = {
         headerText: "Edit Teacher",
-        teacherData: row
+        data: row
       };
 
       objMatDialogConfig.data = {
